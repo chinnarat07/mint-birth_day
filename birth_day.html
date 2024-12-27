@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Surprise</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- หน้าแรก -->
+<div id="page1" class="page">
+    <img src="img/pngtree-birthday-cake-clipart-png-image_13818709-Photoroom-Photoroom.png" alt="เค้กวันเกิด" class="birthday-cake">
+    <h1>สุขสันต์วันเกิด!</h1>
+    <p >โตขึ้นอีกปีเเล้วนะเเก่เท่าเค้าละ อายุ 22 นี้ขอให้เธอมีความสุขมีเเต่รอยยิ้ม <br> ร่างกายเเข็งเเรงไม่เจ็บไม่ป่วย ไม่เจอเรื่องที่ต้องเครียดหรือเสียใจ เลิกคันฟันอยากกัดเค้าได้ละ 🎉🎂</p>
+    <div class="navigation">
+        <button onclick="nextPage(2)">ต่อไป</button>
+    </div>
+</div>
+
+
+        <!-- หน้าสไลด์โชว์ -->
+        <div id="page2" class="page" style="display: none;">
+            <h1>ความทรงจำพิเศษ</h1>
+            <div id="image-container">
+                <div class="slide">
+                    <img src="img/846EA12A-EDAF-4EB2-8C72-28EB3C81BBB7_1_105_c.jpeg" alt="ภาพ 1">
+                    <div class="caption">วันแห่งความสุข</div>
+                </div>
+                <div class="slide" style="display: none;">
+                    <img src="img/91F14AEA-7CEF-4B6A-A8EF-EDC4E0129E0A.JPG" alt="ภาพ 2">
+                    <div class="caption">ช่วงเวลาที่ดี</div>
+                </div>
+                <div class="slide" style="display: none;">
+                    <img src="img/IMG_5947.jpg" alt="ภาพ 4">
+                    <div class="caption">ความทรงจำแสนหวาน</div>
+                </div>
+                <div class="slide">
+                    <img src="img/93A96306-E630-4374-A09E-9EF3A5CA27BA.JPG" alt="ภาพ 5">
+                    <div class="caption">วันแห่งความสุข</div>
+                </div>
+                <div class="slide" style="display: none;">
+                    <img src="img/F85CE55A-BE46-4EEE-9480-DAFA2213ADE9.JPG" alt="ภาพ 2">
+                    <div class="caption">ช่วงเวลาที่ดี</div>
+                </div>
+                <div class="slide" style="display: none;">
+                    <img src="img/IMG_5790.jpg" alt="ภาพ 4">
+                    <div class="caption">ความทรงจำแสนหวาน</div>
+                </div>
+                <div class="slide">
+                    <img src="img/IMG_5793.jpg" alt="ภาพ 5">
+                    <div class="caption">วันแห่งความสุข</div>
+                </div>
+                <div class="slide" style="display: none;">
+                    <img src="img/IMG_6054.jpg" alt="ภาพ 2">
+                    <div class="caption">ช่วงเวลาที่ดี</div>
+                </div>
+                <div class="slide" style="display: none;">
+                    <img src="img/IMG_6197.jpg" alt="ภาพ 4">
+                    <div class="caption">ความทรงจำแสนหวาน</div>
+                </div>
+                <div class="slide">
+                    <img src="img/123.png" alt="ภาพ 5">
+                    <div class="caption">วันแห่งความสุข</div>
+                </div>
+                <div class="slide" style="display: none;">
+                    <!-- เปลี่ยนจากรูปภาพเป็นวิดีโอ -->
+                    <video width="100%" controls>
+                        <source src="img/901D97C3-44C3-427D-92D1-46FB68748854_1_102_o.jpeg" type="video/jpeg">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="caption">ช่วงเวลาที่ดี</div>
+                </div>
+                <div class="slide" style="display: none;">
+                    <!-- เปลี่ยนจากรูปภาพเป็นวิดีโอ -->
+                    <video width="100%" controls>
+                        <source src="video/video7.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="caption">ความทรงจำแสนหวาน</div>
+                </div>
+            </div>
+            
+            <div class="navigation" >
+                <button onclick="previousSlide()">&#8249;</button>
+                <button onclick="nextSlide()">&#8250;</button>
+            </div>
+            <div class="navigation">
+                <button onclick="nextPage(1)">กลับไปก่อนหน้า</button>
+                <button onclick="nextPage(3)">หน้าต่อไป</button>
+            </div>
+        </div>
+
+      <!-- หน้าการ์ดสุ่มของขวัญ -->
+<div id="page3" class="page" style="display: none;">
+    <h1>สุ่มการ์ดของขวัญ</h1>
+    <div class="card-container" id="card-container">
+        <!-- การ์ดจะถูกเติมอัตโนมัติผ่าน JavaScript -->
+    </div>
+    <p>คลิกการ์ดเพื่อดูของขวัญ</p>
+    <div class="navigation">
+        <button onclick="previousPage(2)">กลับ</button>
+    </div>
+</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

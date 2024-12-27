@@ -1,0 +1,176 @@
+/* พื้นฐาน */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #c98988, #c8713e);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* กล่องเนื้อหา */
+.container {
+    max-width: 1200px;
+    width: 90%;
+    background: #d3d3d3;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    overflow: hidden;
+}
+/* รูปภาพเค้ก */
+.birthday-cake {
+    width: 200px; /* ปรับขนาดรูปภาพ */
+    height: auto; /* ให้คงสัดส่วนรูปภาพ */
+    display: block; /* แสดงเป็นบล็อก */
+    margin: 0 auto 20px; /* จัดกึ่งกลางและเพิ่มระยะห่างด้านล่าง */
+    border-radius: 10px; /* มุมมนเพื่อความสวยงาม */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+}
+
+/* หน้า */
+.page {
+    display: none;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.page:first-of-type {
+    display: block;
+}
+
+/* คำอวยพร */
+h1 {
+    font-size: 2.5rem;
+    color: #86423f;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #7a5656;
+}
+
+/* ปุ่ม */
+button {
+    font-size: 1rem;
+    color: #FFF;
+    background: #86423f;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(188, 101, 101, 0.5);
+}
+
+/* สไลด์โชว์ */
+#image-container {
+    display: flex;
+    overflow: hidden;
+    justify-content: center; /* จัดให้สไลด์อยู่กลางแนวนอน */
+    align-items: center; /* จัดให้สไลด์อยู่กลางแนวตั้ง */
+}
+
+.slide {
+    position: relative;
+    width: 600px;  /* กำหนดความกว้างของสไลด์ */
+    height: 400px; /* กำหนดความสูงของสไลด์ */
+    text-align: center;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center; /* จัดให้เนื้อหาภายในสไลด์อยู่กลางแนวนอน */
+    align-items: center; /* จัดให้เนื้อหาภายในสไลด์อยู่กลางแนวตั้ง */
+}
+
+.slide img {
+    width: 100%;  /* ใช้ 100% เพื่อให้ภาพเต็มพื้นที่ */
+    height: 100%; /* ใช้ 100% เพื่อให้ภาพเต็มพื้นที่ */
+    object-fit: cover; /* รักษาสัดส่วนภาพไม่ให้บิดเบี้ยว */
+    border-radius: 20px;
+}
+
+.caption {
+    position: absolute;
+    bottom: 10px; /* ทำให้ข้อความอยู่ด้านล่าง */
+    left: 50%; /* จัดข้อความให้อยู่ตรงกลาง */
+    transform: translateX(-50%); /* ปรับให้ข้อความอยู่ตรงกลางแนวนอน */
+    text-align: center; /* จัดข้อความให้อยู่กลาง */
+    color: rgb(255, 255, 255); /* สีข้อความ */
+    background: rgba(0, 0, 0, 0.3); /* พื้นหลังโปร่งแสง */
+    padding: 8px 25px; /* เว้นระยะรอบข้อความ */
+    border-radius: 20px; /* มุมโค้ง */
+}
+
+
+/* การ์ด */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.card {
+    width: calc(33% - 50px); /* Adjust to take up 1/3 of the container */
+    height: 300px;
+    background: linear-gradient(135deg, #c07e28, #e6c845);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #9c0000;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card[disabled] {
+    background: #D3D3D3;
+    pointer-events: none;
+}
+
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card[disabled] {
+    background: #D3D3D3;
+    pointer-events: none;
+}
+
+/* เอฟเฟกต์ */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* ปุ่มนำทาง */
+.navigation {
+    margin-top: 20px;
+}
+
+button {
+    margin: 0 10px; /* เพิ่มระยะห่างระหว่างปุ่ม */
+}
+
