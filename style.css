@@ -144,15 +144,22 @@ button:hover {
     pointer-events: none;
 }
 
-
-.card:hover {
-    transform: scale(1.1);
+/* Responsive styles for small screens */
+@media (max-width: 768px) {
+    .card {
+        width: calc(33.33% - 10px); /* Ensure 3 cards per row */
+        height: auto; /* Adjust height for content */
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
 }
 
-.card[disabled] {
-    background: #D3D3D3;
-    pointer-events: none;
+@media (max-width: 480px) {
+    .card {
+        width: calc(33.33% - 5px); /* Further adjust for very small screens */
+        font-size: 1.2rem; /* Adjust font size further for narrow screens */
+    }
 }
+
 
 /* เอฟเฟกต์ */
 @keyframes fadeIn {
