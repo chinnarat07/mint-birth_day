@@ -145,6 +145,19 @@ button:hover {
 }
 
 /* Responsive styles for small screens */
+/* สำหรับหน้าจอ iPhone 12 */
+@media (max-width: 390px) {
+    .card {
+        width: calc(33.33% - 5px); /* ปรับให้แสดง 3 การ์ดต่อแถว */
+        font-size: 1.2rem; /* ปรับขนาดฟอนต์ให้พอดี */
+        height: auto; /* ให้การ์ดปรับตามเนื้อหา */
+    }
+
+    .card-container {
+        gap: 10px; /* ลดช่องว่างระหว่างการ์ด */
+    }
+}
+
 @media (max-width: 768px) {
     .card {
         width: calc(33.33% - 10px); /* Ensure 3 cards per row */
