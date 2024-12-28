@@ -153,6 +153,7 @@ button:hover {
         height: auto; /* ให้การ์ดปรับตามเนื้อหา */
     }
 
+    
     .card-container {
         gap: 10px; /* ลดช่องว่างระหว่างการ์ด */
     }
