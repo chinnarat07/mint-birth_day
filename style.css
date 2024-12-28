@@ -172,6 +172,19 @@ button:hover {
         font-size: 1.2rem; /* Adjust font size further for narrow screens */
     }
 }
+/* สำหรับหน้าจอ iPhone 11 */
+@media (max-width: 414px) {
+    .card {
+        width: calc(33.33% - 5px); /* แสดง 3 การ์ดต่อแถว */
+        font-size: 1.4rem; /* ปรับขนาดฟอนต์ให้พอดี */
+        height: auto; /* ให้การ์ดปรับตามเนื้อหา */
+    }
+
+    .card-container {
+        gap: 12px; /* ปรับช่องว่างระหว่างการ์ด */
+    }
+}
+
 
 
 /* เอฟเฟกต์ */
