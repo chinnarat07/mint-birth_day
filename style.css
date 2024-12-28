@@ -144,48 +144,6 @@ button:hover {
     pointer-events: none;
 }
 
-m
-/* Responsive styles for small screens */
-/* สำหรับหน้าจอ iPhone 12 */
-@media (max-width: 390px) {
-    .card {
-        width: calc(33.33% - 5px); /* ปรับให้แสดง 3 การ์ดต่อแถว */
-        font-size: 1.2rem; /* ปรับขนาดฟอนต์ให้พอดี */
-        height: auto; /* ให้การ์ดปรับตามเนื้อหา */
-    }
-
-
-    .card-container {
-        gap: 10px; /* ลดช่องว่างระหว่างการ์ด */
-    }
-}
-
-@media (max-width: 768px) {
-    .card {
-        width: calc(33.33% - 10px); /* Ensure 3 cards per row */
-        height: auto; /* Adjust height for content */
-        font-size: 1.5rem; /* Adjust font size for smaller screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .card {
-        width: calc(33.33% - 5px); /* Further adjust for very small screens */
-        font-size: 1.2rem; /* Adjust font size further for narrow screens */
-    }
-}
-/* สำหรับหน้าจอ iPhone 11 */
-@media (max-width: 414px) {
-    .card {
-        width: calc(40.33% - 5px); /* แสดง 3 การ์ดต่อแถว */
-        font-size: 1.4rem; /* ปรับขนาดฟอนต์ให้พอดี */
-        height: auto; /* ให้การ์ดปรับตามเนื้อหา */
-    }
-
-    .card-container {
-        gap: 12px; /* ปรับช่องว่างระหว่างการ์ด */
-    }
-}
 
 
 
