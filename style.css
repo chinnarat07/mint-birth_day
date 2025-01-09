@@ -19,6 +19,7 @@ body {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     padding: 20px;
     overflow: hidden;
+   
 }
 /* รูปภาพเค้ก */
 .birthday-cake {
@@ -107,6 +108,7 @@ button:hover {
     background: rgba(0, 0, 0, 0.3); /* พื้นหลังโปร่งแสง */
     padding: 8px 25px; /* เว้นระยะรอบข้อความ */
     border-radius: 20px; /* มุมโค้ง */
+    width: 350px;
 }
 
 
