@@ -51,6 +51,7 @@ h1 ,h5 {
 p {
     font-size: 1.2rem;
     color: #7a5656;
+    text-align: justify;
 }
 
 /* ปุ่ม */
@@ -171,3 +172,80 @@ button {
     margin: 0 10px; /* เพิ่มระยะห่างระหว่างปุ่ม */
 }
 
+/* สำหรับ iPad (แนวนอนและแนวตั้ง) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: 90%; /* ปรับความกว้างให้พอดีกับหน้าจอ iPad */
+       
+
+    .slide {
+        width: 90%; /* ลดความกว้างของสไลด์ */
+        height: 20vh; /* ให้ปรับความสูงตามเนื้อหา */
+    }
+
+    h1, h5 {
+        font-size: 2rem; /* ลดขนาดตัวอักษร */
+    }
+
+    p {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    button {
+        padding: 8px 15px; /* ลดขนาดปุ่ม */
+        font-size: 0.9rem;
+    }
+
+    .card {
+        width: calc(50% - 30px); /* แสดงการ์ด 2 ใบต่อแถว */
+        height: 10vh;
+    }
+}
+}
+/* สำหรับ iPhone 12 (แนวตั้ง) */
+@media screen and (max-width: 390px) {
+    .container {
+        width: 90%; /* ใช้ความกว้างเต็มจอ */
+        padding: 10px; /* ลดระยะขอบ */
+    }
+
+    h1, h5 {
+        font-size: 1.8rem; /* ลดขนาดตัวอักษรเพิ่มเติม */
+    }
+
+    p {
+        font-size: 0.9rem; /* ลดขนาดตัวอักษร */
+        margin: auto !important;
+        text-align: center;
+    }
+
+    button {
+        padding: 5px 10px; /* ลดขนาดปุ่ม */
+        font-size: 0.8rem;
+    }
+
+    .birthday-cake {
+        width: 150px; /* ลดขนาดรูปภาพ */
+    }
+
+    .slide {
+        width: 100%; /* ปรับสไลด์ให้เต็มจอ */
+        height: auto;
+    }
+
+    .card {
+        width: calc(50% - 30px); /* แสดงการ์ด 2 ใบต่อแถว */
+        height: 20vh;
+        margin: 5px auto;
+        font-size: 0.5rem;
+    }
+    .caption {
+        width: 300px;
+    }
+    .slide img {
+        width: 100%;  /* ใช้ 100% เพื่อให้ภาพเต็มพื้นที่ */
+        height: 70vh; /* ใช้ 100% เพื่อให้ภาพเต็มพื้นที่ */
+
+    }
+}
