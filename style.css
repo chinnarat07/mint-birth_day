@@ -42,10 +42,10 @@ body {
 }
 
 /* คำอวยพร */
-h1 {
+h1 ,h5 {
     font-size: 2.5rem;
     color: #86423f;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
 }
 
 p {
